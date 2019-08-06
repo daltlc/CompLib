@@ -5,7 +5,7 @@
 - [Microsoft](#microsoft)
   - [Atoms](#MS-atoms)
   
-<img id="microsoft" src="src/assets/ms.png" width=140">
+<img id="microsoft" src="src/assets/ms.png" width="140">
 
 ### MS-atoms
 
