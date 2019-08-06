@@ -5,7 +5,9 @@
 - [Microsoft](#microsoft)
   - [Atoms](#MS-atoms)
 
-## Microsoft ![alt text](https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/microsoft-512.png)
+## Microsoft ![alt text]
+  <img url="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/microsoft-512.png" width="50">
+
 
 
 ### MS-atoms
