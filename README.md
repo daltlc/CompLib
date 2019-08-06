@@ -4,15 +4,17 @@
 
 - [Microsoft](#microsoft)
   - [Atoms](#MS-atoms)
+
+- [General](#general)
+  - [ScrollBehavior](#scroll-behavior)
   
 <img id="microsoft" src="src/assets/ms.png" width="140">
 
 ### MS-atoms
 
-
 - [AppButton](#AppButton)
 
-AppButton
+<strong>AppButton</strong>
 ```
 <template>
 <button class="button" :class="buttonClass"><a :id="ctaID">{{label}}</a></button>
@@ -47,13 +49,13 @@ export default {
 
 ```
 
-Placement
+<strong>Placement</strong>
 
 ```
 <AppButton :id="this.continueReadingCTA" :label="continueReading" :class="btnClass"/>
 ```
 
-Common styling
+<strong>Common styling</strong>
 
 ```
 .btnClass {
@@ -76,3 +78,8 @@ font-family: $segoe--bold;
         background-color: $bg--blue--2;
 }
 ```
+
+
+## General
+
+- Scroll Behavior 
