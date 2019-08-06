@@ -4,10 +4,8 @@
 
 - [Microsoft](#microsoft)
   - [Atoms](#MS-atoms)
-
-## Microsoft
   
-<img src="src/assets/ms.png" width="100">
+<img id="microsoft" src="src/assets/ms.png" width="100">
 
 ### MS-atoms
 
