@@ -12,7 +12,7 @@
 - [AppButton](#AppButton)
 
 AppButton
-'''
+```
 <template>
 <button class="button" :class="buttonClass"><a :id="ctaID">{{label}}</a></button>
 </template>
@@ -44,17 +44,17 @@ export default {
 }
 </style>
 
-'''
+```
 
 Placement
 
-'''
+```
 <AppButton :id="this.continueReadingCTA" :label="continueReading" :class="btnClass"/>
-'''
+```
 
 Common styling
 
-'''
+```
 .btnClass {
 @include simpleTransition(all 0.25s ease-in-out);
 border: 0;
@@ -74,4 +74,4 @@ font-family: $segoe--bold;
       &__btnClass:hover {
         background-color: $bg--blue--2;
 }
-'''
+```
