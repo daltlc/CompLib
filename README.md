@@ -6,7 +6,7 @@
   - [Atoms](#MS-atoms)
 
 ## Microsoft ![alt text]
-  <img src="src/assets/ms/png" width="50">
+  <img src="src/assets/ms.png" width="50">
 
 
 
