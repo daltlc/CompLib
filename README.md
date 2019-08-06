@@ -1,29 +1,17 @@
-# complib
+#Indigo Slate UI component library
 
-## Project setup
-```
-npm install
-```
+> All current components are for Vue.js
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- [Microsoft](#microsoft)
+  - [Official Resources](#official-resources)
+  - [External Resources](#external-resources)
+  - [Community](#community)
+  - [Conferences](#conferences)
+  - [Podcasts](#podcasts)
+  - [Youtube Channels](#youtube-channels)
+  - [Official Examples](#official-examples)
+  - [Tutorials](#tutorials)
+  - [Examples](#examples)
+  - [Books](#books)
+  ### Microsoft
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
