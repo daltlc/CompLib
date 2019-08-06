@@ -3,7 +3,7 @@
 > All current components are for Vue.js
 
 - [Microsoft](#microsoft)
-  -<a href="https://www.npmjs.com/package/vue-uhf">UHF</a>
+  - <a href="https://www.npmjs.com/package/vue-uhf">UHF</a>
   - [Atoms](#MS-atoms)
 
 - [General](#general)
