@@ -1,11 +1,11 @@
-#Indigo Slate UI component library
+# Indigo Slate UI component library
 
 > All current components are for Vue.js
 
 - [Microsoft](#microsoft)
   - [Atoms](#MS-atoms)
   
-<img id="microsoft" src="src/assets/ms.png" width="100">
+<img id="microsoft" src="src/assets/ms.png" width=140">
 
 ### MS-atoms
 
