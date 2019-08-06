@@ -81,3 +81,98 @@ font-family: $segoe--bold;
 
 
  ### Scroll-behavior
+
+ ``` <template>
+  <div class="scrolltrigger__wrapper">
+    <div class="scrolltrigger__content">
+      <slot/>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    debug: Boolean
+  },
+  data() {
+    return {
+      eventId: 0,
+      lastScrollEventTimestamp: 0,
+      lastEmittedDirection: null,
+      centerPosition: null,
+      scrolledAmount: null,
+      metThreshold: null,
+      direction: null,
+    }
+  },
+  computed: {
+    scrollData() {
+      return {
+          direction: this.direction,
+          eventId: this.eventId
+      }
+    }
+  },
+  methods: {
+      handleScrollEvents() {
+        this.direction =  window.pageYOffset > this.centerPosition ? "down" : window.pageYOffset < this.centerPosition ? "up" : null;
+        if (this.direction) {
+          this.lastScrollEventTimestamp = Date.now();
+        }
+        //event hasn't fired in 100ms. AKA the scroll momentum has stopped.
+        if ((Date.now() - this.lastScrollEventTimestamp) > 100) {
+          
+          //Reset the direction
+          this.direction = null;
+          if (this.lastEmittedDirection) {
+            this.eventId += 1;
+            this.lastEmittedDirection = this.direction;
+            this.$emit('onScroll', this.scrollData);
+          }
+        } else {
+            if (this.direction) {
+              this.eventId += 1;
+              this.lastEmittedDirection = this.direction;
+              this.$emit('onScroll', this.scrollData);
+            }
+        }
+        window.scrollTo(0, this.centerPosition);
+        window.requestAnimationFrame(this.handleScrollEvents);
+      }
+  },
+  mounted() {
+    this.centerPosition = parseInt(window.innerHeight / 2);
+    window.scrollTo(0, this.centerPosition);
+    window.requestAnimationFrame(this.handleScrollEvents);
+   }
+}
+</script>
+
+<style lang="scss">
+  .scrolltrigger {
+    &__wrapper {
+      height: 200vh;
+    }
+    &__content {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+    }
+    &__debug {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 300px;
+      background: rgba(255, 255, 255, 0.171);
+      text-align: left;
+    }
+  }
+  body {
+    /* overflow: hidden; */
+    &::-webkit-scrollbar { width: 0 !important }
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+  }
+</style>
+```
