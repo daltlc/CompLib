@@ -5,9 +5,11 @@
 - [Microsoft](#microsoft)
   - [Atoms](#MS-atoms)
 
-## Microsoft
+## Microsoft ![alt text](https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/microsoft-512.png)
+
 
 ### MS-atoms
+
 
 - [AppButton](#AppButton)
 
