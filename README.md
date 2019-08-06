@@ -6,7 +6,7 @@
   - [Atoms](#MS-atoms)
 
 - [General](#general)
-  - [ScrollBehavior](#scroll-behavior)
+  - [ScrollBehavior](#Scroll-behavior)
   
 <img id="microsoft" src="src/assets/ms.png" width="140">
 
@@ -82,4 +82,4 @@ font-family: $segoe--bold;
 
 ## General
 
-- Scroll-behavior 
+- Scroll-behavior
