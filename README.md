@@ -82,4 +82,4 @@ font-family: $segoe--bold;
 
 ## General
 
-- Scroll Behavior 
+- Scroll-behavior 
