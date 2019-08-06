@@ -80,8 +80,14 @@ font-family: $segoe--bold;
 ```
 
 
- ### Scroll-behavior
+ ## Scroll-behavior
 
+
+
+### ScrollTrigger
+
+> Description
+ 
  ``` <template>
   <div class="scrolltrigger__wrapper">
     <div class="scrolltrigger__content">
