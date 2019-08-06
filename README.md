@@ -4,7 +4,7 @@
 
 - [Microsoft](#microsoft)
   - <a href="https://www.npmjs.com/package/vue-uhf">UHF</a>
-  - [Atoms](#MS-atoms)
+  - [Buttons](#MS-buttons)
 
 - [General](#general)
   - [ScrollBehavior](#Scroll-behavior)
@@ -12,7 +12,7 @@
   
 <img id="microsoft" src="src/assets/ms.png" width="140">
 
-### MS-atoms
+### MS-buttons
 
 - [AppButton](#AppButton)
 
