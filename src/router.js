@@ -9,7 +9,8 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Button.vue")
     },
     {
       path: "/about",
@@ -27,7 +28,7 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/Button.vue")
     },
     {
-      path: "/scrollBehavior",
+      path: "/scrollbehavior",
       name: "ScrollBehavior",
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/ScrollBehavior.vue")
@@ -37,23 +38,31 @@ export default new Router({
       name: "UHFs",
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/UHFs.vue")
+    },
+    {
+      path: "/visualguidelines",
+      name: "Visual Guidelines",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/VisualGuide.vue")
     }
   ],
-
 
   sideNavComponents: [
     {
       path: "/button",
-      name: "Button",
+      name: "Button"
     },
     {
-      path: "/scrollBehavior",
-      name: "ScrollBehavior",
+      path: "/scrollbehavior",
+      name: "Scroll Behavior"
     },
     {
       path: "/uhfs",
-      name: "UHFs",
-
+      name: "UHFs"
+    },
+    {
+      path: "/visualguidelines",
+      name: "Indigo UI visual guidelines"
     }
   ]
 });
