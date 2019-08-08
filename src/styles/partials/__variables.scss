@@ -1,0 +1,35 @@
+// Font families
+$segoe: "Segoe UI Regular", -apple-system, BlinkMacSystemFont, "Roboto",
+  "Helvetica Neue", sans-serif;
+$segoe--light: "Segoe UI Light", -apple-system, BlinkMacSystemFont, "Roboto",
+  "Helvetica Neue", sans-serif;
+$segoe--semi: "Segoe UI Semibold", -apple-system, BlinkMacSystemFont, "Roboto",
+  "Helvetica Neue", sans-serif;
+$segoe--bold: "Segoe UI Bold", -apple-system, BlinkMacSystemFont, "Roboto",
+  "Helvetica Neue", sans-serif;
+
+// MWF Font weights
+$bold: 700;
+$semi-bold: 600;
+$normal: 400;
+
+// Colors (You will most likely have to edit these on a project to project basis)
+$text--white: #ffffff;
+$text--default: #000000;
+$text--grey: #737373;
+$text--blue: #0078d4;
+$text--greyheading: #707070;
+$text--lightgrey: #6d6d6d;
+
+$bg--white: #ffffff;
+$bg--black: #000000;
+$bg--blue: #0078d4;
+$bg--blue--2: #0564ad;
+$bg--darkgrey: #3c3c41;
+$bg--fadewhite: #f8f8f8;
+$bg--lightgrey: #ebebeb;
+$bg--shadow: #888888;
+
+//Variable for box shadow
+$box--sh: 0px 1px 5px 0px rgba(0, 0, 0, 0.16);
+$nav--sh: 0px 4px 5px 0px rgba(0, 0, 0, 0.16);

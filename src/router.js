@@ -19,6 +19,41 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/button",
+      name: "Button",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Button.vue")
+    },
+    {
+      path: "/scrollBehavior",
+      name: "ScrollBehavior",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/ScrollBehavior.vue")
+    },
+    {
+      path: "/uhfs",
+      name: "UHFs",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/UHFs.vue")
+    }
+  ],
+
+
+  sideNavComponents: [
+    {
+      path: "/button",
+      name: "Button",
+    },
+    {
+      path: "/scrollBehavior",
+      name: "ScrollBehavior",
+    },
+    {
+      path: "/uhfs",
+      name: "UHFs",
+
     }
   ]
 });
